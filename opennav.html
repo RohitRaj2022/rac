@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owl Carousel Scrollable Cards</title>
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .owl-carousel .item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .owl-carousel .item:hover {
+            transform: translateY(-10px);
+        }
+        .icon {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <i class="icon fas fa-tools"></i>
+            <div class="title">Service One</div>
+            <div class="description">We offer high-quality repair services.</div>
+        </div>
+        <div class="item">
+            <i class="icon fas fa-paint-brush"></i>
+            <div class="title">Service Two</div>
+            <div class="description">Professional painting services available.</div>
+        </div>
+        <div class="item">
+            <i class="icon fas fa-cogs"></i>
+            <div class="title">Service Three</div>
+            <div class="description">We provide expert mechanical solutions.</div>
+        </div>
+        <div class="item">
+            <i class="icon fas fa-bolt"></i>
+            <div class="title">Service Four</div>
+            <div class="description">Electrical services with safety assurance.</div>
+        </div>
+        <div class="item">
+            <i class="icon fas fa-shield-alt"></i>
+            <div class="title">Service Five</div>
+            <div class="description">Security services for all your needs.</div>
+        </div>
+    </div>
+    
+    <!-- jQuery & Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
