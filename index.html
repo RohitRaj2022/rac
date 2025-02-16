@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RAC</title>
-  <link rel="preload" href="./RAC/build/assets/bootstrap-YHaYh3UX.css">
+  <link rel="preload" href="./build/assets/bootstrap-YHaYh3UX.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="modulepreload" href="./build/assets/custom-0xYnQhbu.js" />
+
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet"
@@ -49,143 +51,6 @@
   <link rel="icon" type="image/png" href="./image/racLogo-plan.png" sizes="32x32">
   <link rel="icon" type="image/png" href="./image/racLogo-plan.png" sizes="16x16">
 
-  <style>
-    .owl-carousel .item {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .owl-carousel .item:hover {
-      transform: translateY(-10px);
-    }
-
-    .icon {
-      font-size: 40px;
-      color: #007bff;
-      margin-bottom: 10px;
-    }
-
-    .title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .description {
-      font-size: 16px;
-      color: #555;
-    }
-
-    /* ===============================Contact form =============================== */
-    
-    .contact-container {
-      display: flex;
-      justify-content: center;
-      /* Center the form horizontally */
-      /* align-items: center;     Center the form vertically */
-      width: 100%;
-      height: 100vh;
-      /* Ensure it takes the full viewport height */
-      max-width: 1200px;
-      background: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      overflow: hidden;
-      margin: 0 auto;
-      /* Centers the contact container horizontally */
-    }
-
-    .form-section {
-      flex: 1;
-      padding: 20px;
-    }
-
-    .form-section h2 {
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .form-section input,
-    .form-section select,
-    .form-section textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-
-    .form-section input:focus,
-    .form-section select:focus,
-    .form-section textarea:focus {
-      border-color: #6e8efb;
-      box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
-    }
-
-    .form-section button {
-      width: 100%;
-      padding: 10px;
-      background: #6e8efb;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .form-section button:hover {
-      background: #4a6efb;
-      transform: scale(1.05);
-    }
-
-    .map-section {
-      flex: 1;
-      min-height: 400px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    @media (max-width: 768px) {
-      .contact-container {
-        flex-direction: column;
-        
-      }
-
-      .map-section {
-        min-height: 300px;
-      }
-    }
-
-
-    /* =============================why choose us start ============================= */
-     /* Custom CSS */
-     .carousel-item {
-      text-align: center;
-      padding: 20px;
-    }
-    .carousel-item img {
-      max-width: 100px;
-      margin-bottom: 10px;
-    }
-    .carousel-item h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-    }
-    .carousel-item p {
-      font-size: 14px;
-      color: #555;
-    }
-    /* ================================why choose us end============================== */
-  </style>
 
 
 </head>
@@ -250,11 +115,11 @@
 
   </section>
 
-  <!-- --------------------------------test start----------------------------- -->
+  <!-- -------------------------------- test start ----------------------------- -->
 
 
 
-  <!-- -----------------------------test end------------------------------ -->
+  <!-- ----------------------------- test end ------------------------------ -->
 
 
   <main>
@@ -361,7 +226,7 @@
           <!--Start single item-->
           <div class="col-xs-6 col-sm-4">
             <div class="single-item imghvr-hinge-down box-prop" style="width: 300px; height: auto;">
-              <a href="#">
+              <a href="./pages/washingmachine.html">
                 <div class="inner-content ">
                   <div class="img-holder img-prop">
                     <img src="./build/images/washingmachine.jpg" alt="washing Machine Repair" width="370" height="200"
@@ -504,7 +369,7 @@
                                       <span class="flaticon-air-conditioner-1"></span>
                                   </div> -->
                     <div class="text">
-                      <h5>All Services</h5>
+                      <h5>Other Electric Work</h5>
                     </div>
                   </div>
                 </div>
@@ -525,12 +390,13 @@
         <div class="row d-flex">
           <div class="col-md-6 col-sm-6 col-xs-6">
             <div class="service-item">
-              <h3>Our Service</h3>
+              <h3>Quick Services</h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
             <div class="service-item">
-              <button class="button-63" data-toggle="modal" data-target="#enquiry">Get In Touch</button>
+              <button class="button-63" data-toggle="modal" data-target="#enquiry"><a href="./contact.html">Get In
+                  Touch</a></button>
             </div>
           </div>
         </div>
@@ -539,38 +405,47 @@
 
 
     <!-- ---------------------------------------------- own carousel test why choose us test start-----------------------  -->
-<sectio class="choose-us-area"></sectio>
 
-    <div class="owl-carousel owl-theme">
-      <div class="carousel-item">
-        <img src="logo1.png" alt="Logo 1">
-        <h3>Heading 1</h3>
-        <p>This is the first paragraph.</p>
+    <h2>Our Services</h2>
+
+    <div class="carousel-container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <i class="icon fas fa-tools"></i>
+          <div class="title">Appliance Repair</div>
+          <div class="description">We provide high-quality repair services for home appliances.</div>
+        </div>
+        <div class="item">
+          <i class="icon fas fa-snowflake"></i>
+          <div class="title">AC Servicing</div>
+          <div class="description">Expert AC installation and maintenance services.</div>
+        </div>
+        <div class="item">
+          <i class="icon fas fa-tint"></i>
+          <div class="title">Water Purifier Repair</div>
+          <div class="description">Ensure clean and safe drinking water with our RO services.</div>
+        </div>
+        <div class="item">
+          <i class="icon fas fa-bolt"></i>
+          <div class="title">Electrical Repairs</div>
+          <div class="description">Safe and professional electrical services.</div>
+        </div>
+        <div class="item">
+          <i class="icon fas fa-wrench"></i>
+          <div class="title">Washing Machine Repair</div>
+          <div class="description">Get your washing machine repaired by skilled technicians.</div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="logo2.png" alt="Logo 2">
-        <h3>Heading 2</h3>
-        <p>This is the second paragraph.</p>
-      </div>
-      <div class="carousel-item">
-        <img src="logo3.png" alt="Logo 3">
-        <h3>Heading 3</h3>
-        <p>This is the third paragraph.</p>
-      </div>
-      <!-- Add more items as needed -->
     </div>
-  </sectio>
+
 
     <!-- -----------------------------------------------------why choose us end---------------- / -->
 
 
 
     <!-- owl carousel test start -->
-    <section class="choose-us-area">
-      <!-- ----------------------------------------------------------------  -->
-
-
-      <!-- ---------------------------------------------------------- -->
+    <!-- <section class="choose-us-area">
+     
       <div class="container">
         <div class="sec-title">
           <h2><span>Why Choose Us</span></h2>
@@ -578,18 +453,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="choose-carousel owl-carousel owl-theme owl-loaded">
-              <!--Start single item-->
-
-              <!--End single item-->
-              <!--Start single item-->
-
-              <!--End single item-->
-              <!--Start single item-->
-
-              <!--End single item-->
-              <!--Start single item-->
-
-              <!--End single item-->
+            
               <div class="owl-stage-outer">
                 <div class="owl-stage"
                   style="transform: translate3d(-1000px, 0px, 0px); transition: 0.3s; width: 2500px;">
@@ -858,7 +722,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
 
@@ -899,26 +763,26 @@
                     </div>
                     <div class="row">
                       <div class="col-md-3 col-sm-6 col-xs-6 my-1">
-                        <div class="image-holder box-certified">
+                        <div class="image-holder box-certified" style="display: flex; align-items: center; justify-content: center;">
                           <img src="./image/iso.webp" class="img-rounded" width="145" height="109"
                             style="width: 100%; height: auto;" loading="lazy" alt="ISO certificate">
                         </div>
                       </div>
 
                       <div class="col-md-3 col-sm-6 col-xs-6 my-1">
-                        <div class="image-holder box-certified">
+                        <div class="image-holder box-certified" style="display: flex; align-items: center; justify-content: center;">
                           <img src="./image/msme.png" class="img-rounded" width="145" height="109"
                             style="width: 100%; height: auto;" loading="lazy" alt="MSME">
                         </div>
                       </div>
                       <div class="col-md-3 col-sm-6 col-xs-6 my-1">
-                        <div class="image-holder box-certified">
+                        <div class="image-holder box-certified" style="display: flex; align-items: center; justify-content: center;">
                           <img src="./image/nochildlabour.jpg" class="img-rounded" width="145" height="109"
                             style="width: 100%; height: auto;" loading="lazy" alt="No Child Labour">
                         </div>
                       </div>
                       <div class="col-md-3 col-sm-6 col-xs-6 my-1">
-                        <div class="image-holder box-certified">
+                        <div class="image-holder box-certified" style="display: flex; align-items: center; justify-content: center;">
                           <img src="./image/bee.png" class="img-rounded" width="1405" height="109"
                             style="width: 100%; height: auto;" loading="lazy" alt="BEE">
                         </div>
@@ -966,10 +830,15 @@
     <!--  -->
     <!--End Brand area-->
 
+
+
+
+    <!-- ========================================= start top area ================================= -->
+
     <section class="top-area">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-4">
+          <!-- <div class="col-md-4 col-sm-4 col-xs-4">
             <div class="service-item">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
               <p>Quick Services</p>
@@ -986,14 +855,38 @@
               <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
               <p>100% Satisfaction</p>
             </div>
-          </div>
-         
+          </div> -->
+          <h2 style="margin-bottom: 0;">Quick Services</h2>
         </div>
       </div>
     </section>
     <!-- blog area-->
 
+    <!-- ================================================= animateCounters =================================== -->
 
+
+
+    <div class="stats-container">
+      <div class="stat-box">
+        <i class="stat-icon fas fa-user-cog"></i>
+        <div class="stat-number" data-target="17">0</div>
+        <div class="stat-label">Technicians</div>
+      </div>
+      <div class="stat-box">
+        <i class="stat-icon fas fa-users"></i>
+        <div class="stat-number" data-target="1328">0</div>
+        <div class="stat-label">Customers</div>
+      </div>
+      <div class="stat-box">
+        <i class="stat-icon fas fa-smile"></i>
+        <div class="stat-number" data-target="1325">0</div>
+        <div class="stat-label">Satisfied Customers</div>
+      </div>
+    </div>
+
+
+
+    <!-- ===============================================animated counter end ======================================== -->
 
     <!--appoinment area-->
     <!--Start appoinment area-->
@@ -1019,15 +912,37 @@
           <button type="submit">Send Message</button>
         </form>
       </div>
-      <div class="map-section">
+      <!-- <div class="map-section">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9730192130246!2d77.04727435200567!3d28.63057072774553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05fe251deb61%3A0x8548afd0f9b4d18a!2sRoy&#39;s%20Air%20conditioner%20%2FAC%20Repair%20service%20installation%20Dwarka!5e0!3m2!1sen!2sin!4v1739550382987!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      </div> -->
     </div>
 
     <!--End appoinment area-->
 
     <!--City area-->
-
+    <!-- ==========================Area we cover =============================== -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="services-area">
+            <h2>Roy's Air Conditioner Near You</h2>
+            <div class="scrollable-section">
+              <ul class="scrollable-list">
+                <li><a href="">&nbsp; Uttam Nagar</a></li>
+                <li><a href="">&nbsp; Dwarka</a>
+                </li>
+                <li><a href="">&nbsp; Nangloi</a></li>
+                <li><a href="">&nbsp; Rohini</a></li>
+                <li><a href="">&nbsp; Peeragarhi</a></li>
+                <li><a href="">&nbsp; Najafgarh</a></li>
+                <li><a href="">&nbsp; Paschim Vihar</a></li>
+                <li><a href="">&nbsp; Meera Bagh</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--End City area-->
   </main>
@@ -1037,70 +952,71 @@
   <!-- modal end -->
 
 
-<!--Start footer area-->
-<footer class="footer-area">
-  <div class="container">
-    <div class="row">
-      <!--Start single footer widget-->
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="single-footer-widget mar-btm">
-          <div class="footer-logo">
-            <a href="./index.html">
-              <img src="./build/images/racLogo-plan.png" alt="rac Logo" width="165px">
-            </a>
-          </div>
-          <div class="our-info">
-            <p>Welcome to Roy's Air Conditioner, your trusted choice for AC, washing machine, geyser, and RO repairs.
-              We deliver expert service with a focus on quality and customer satisfaction..</p>
-            <div class="button">
-              <a class="" href="./about.html"><span
-                  class="far fa-arrow-alt-circle-right"></span>Read
-                More</a>
+  <!--Start footer area-->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row">
+        <!--Start single footer widget-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="single-footer-widget mar-btm">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./build/images/racLogo-plan.png" alt="rac Logo" width="165px">
+              </a>
+            </div>
+            <div class="our-info">
+              <p>Welcome to Roy's Air Conditioner, your trusted choice for AC, washing machine, geyser, and RO repairs.
+                We deliver expert service with a focus on quality and customer satisfaction..</p>
+              <div class="button">
+                <a class="" href="./about.html"><span class="far fa-arrow-alt-circle-right"></span>Read
+                  More</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!--End single footer widget-->
-      <!--Start single footer widget-->
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="single-footer-widget mar-btm">
-          <div class="title">
-            <h3>Usefull Links</h3>
+        <!--End single footer widget-->
+        <!--Start single footer widget-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="single-footer-widget mar-btm">
+            <div class="title">
+              <h3>Usefull Links</h3>
+            </div>
+            <ul class="usefull-links left">
+
+              <li><a href="./about.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Know about us</a>
+              </li>
+
+              <li><a href="#"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Privacy Policy</a></li>
+              <li><a href="#"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Terms of Use</a></li>
+              <li><a href="#"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Carrier</a></li>
+
+            </ul>
+
           </div>
-          <ul class="usefull-links left">
-
-            <li><a href="./about.html"><span
-                  class="fa fa-arrow-circle-o-right li-color-blue"></span>Know about us</a></li>
-
-            <li><a href="#"><span
-                  class="fa fa-arrow-circle-o-right li-color-blue"></span>Privacy Policy</a></li>
-            <li><a href="#"><span
-                  class="fa fa-arrow-circle-o-right li-color-blue"></span>Terms of Use</a></li>
-            <li><a href="#"><span
-                  class="fa fa-arrow-circle-o-right li-color-blue"></span>Carrier</a></li>
-
-          </ul>
-
         </div>
-      </div>
-      <!--Start single footer widget-->
-      <!--Start single footer widget-->
-      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-        <div class="single-footer-widget">
-          <div class="title">
-            <h3>Services Near Me</h3>
+        <!--Start single footer widget-->
+        <!--Start single footer widget-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="single-footer-widget">
+            <div class="title">
+              <h3>Services Near Me</h3>
+            </div>
+            <ul class="usefull-links">
+              <li><a href="./pages/ac.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Air
+                  Conditioner</a></li>
+              <li><a href="./pages/washingmachine.html"><span
+                    class="fa fa-arrow-circle-o-right li-color-blue"></span>Washing
+                  Maching</a></li>
+              <li><a href="./pages/fridge.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Fridge</a>
+              </li>
+              <li><a href="./pages/geyser.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Geyser</a>
+              </li>
+              <li><a href="./pages/microwave.html"><span
+                    class="fa fa-arrow-circle-o-right li-color-blue"></span>Microwave</a></li>
+
+            </ul>
           </div>
-          <ul class="usefull-links">
-            <li><a href="./pages/ac.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Air Conditioner</a></li>
-            <li><a href="./pages/washingmachine.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Washing
-                Maching</a></li>
-            <li><a href="./pages/fridge.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Fridge</a></li>
-            <li><a href="./pages/geyser.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Geyser</a></li>
-            <li><a href="./pages/microwave.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Microwave</a></li>
-
-          </ul>
         </div>
-      </div>
         <!--End single footer widget-->
         <!--Start single footer widget-->
         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
@@ -1192,26 +1108,26 @@
   <!--End footer area-->
   <!--Scroll to top-->
   <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+  <script src="./build/assets/script.js"></script>
   <!-- <script src="/RAC/build/frontend-assets/js/jquery.js" defer></script> -->
   <link rel="modulepreload" href="./build/assets/bootstrap.min-lz7vx7XX.js" />
   <link rel="modulepreload" href="./build/assets/owl.carousel.min-0Kl7yIdt.js" />
   <link rel="modulepreload" href="./build/assets/validation-kp7SKBCd.js" />
+
+  =======================for burgermenu============================
   <script type="module" src="./build/assets/bootstrap.min-lz7vx7XX.js"></script>
+
+  <!-- ========================= end burgermenu ============== -->
   <script type="module" src="./build/assets/owl.carousel.min-0Kl7yIdt.js"></script>
   <script type="module" src="./build/assets/validation-kp7SKBCd.js"></script>
 
-  <!-- <script>
-    var reCAPTCHA_site_key = "6LelVYwpAAAAAA9jMMGzBHb-oFNsCYwsTHFv53Hg";
-  </script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LelVYwpAAAAAA9jMMGzBHb-oFNsCYwsTHFv53Hg" async></script> -->
-  <!-- thm custom script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./build/assets/owl.carousel.js"></script>
   <script src="https://kit.fontawesome.com/080c86d33b.js" crossorigin="anonymous"></script>
   <script src="./js/sweetalert.js" defer></script>
-  <link rel="modulepreload" href="./build/assets/custom-0xYnQhbu.js" />
   <script type="module" src="./build/assets/custom-0xYnQhbu.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -1240,15 +1156,15 @@
     //   },
 
     // });
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggleButton = document.getElementById("menu-toggle");
-      const menu = document.querySelector(".navbar-collapse");
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   const toggleButton = document.getElementById("menu-toggle");
+    //   const menu = document.querySelector(".navbar-collapse");
 
-      toggleButton.addEventListener("click", function () {
-        menu.classList.toggle("open");
-        toggleButton.classList.toggle("active");
-      });
-    });
+    //   toggleButton.addEventListener("click", function () {
+    //     menu.classList.toggle("open");
+    //     toggleButton.classList.toggle("active");
+    //   });
+    // });
 
 
 
@@ -1289,59 +1205,97 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> -->
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-<!-- jQuery & Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- jQuery & Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<script>
-    $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: true,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            responsive: {
-                0: { items: 1 },
-                600: { items: 2 },
-                1000: { items: 3 }
-            }
-        });
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 3 }
+        }
+      });
     });
-</script>
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 
 
- <!-- ============================owl carousel js start ================================ -->
- <!-- Include jQuery and Owl Carousel JS -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
- <script>
-   $(document).ready(function(){
-     $(".owl-carousel").owlCarousel({
-       items: 1,
-       loop: true,
-       margin: 10,
-       autoplay: true,
-       autoplayTimeout: 3000,
-       autoplayHoverPause: true,
-       responsive: {
-         0: {
-           items: 1
-         },
-         600: {
-           items: 2
-         },
-         1000: {
-           items: 3
-         }
-       }
-     });
-   });
- </script>
+  <!-- ============================owl carousel js start ================================ -->
+  <!-- Include jQuery and Owl Carousel JS -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
+  <!-- jQuery (MUST BE LOADED FIRST) -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
- <!-- ============================owl carousel js end================================ -->
+  <!-- Owl Carousel JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script> -->
 
+
+  <!-- ============================owl carousel js start ================================ -->
+  <!-- Include jQuery and Owl Carousel JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    // $(document).ready(function () {
+    //   $(".owl-carousel").owlCarousel({
+    //     loop: true,
+    //     margin: 15,
+    //     nav: true,
+    //     dots: true,
+    //     autoplay: true,
+    //     autoplayTimeout: 3000,
+    //     responsive: {
+    //       0: { items: 1 },
+    //       600: { items: 2 },
+    //       1000: { items: 3 }
+    //     }
+    //   });
+    // });
+
+
+    // <!-- ============================owl carousel js end================================ -->
+
+
+    // <!-- ================================= animated counter================================== -->
+
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number');
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const current = +counter.innerText;
+          const increment = target / 100;
+
+          if (current < target) {
+            counter.innerText = Math.ceil(current + increment);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    }
+
+    window.onload = animateCounters;
+  </script>
+
+
+
+  <!-- =======================================animated counter end ============================== -->
 </body>
 
 </html>
