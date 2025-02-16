@@ -182,7 +182,7 @@ body {
 
 .ac-bg {
     position: relative;
-    background-image: url() !important;
+    background-image: url('../images/racabout.jpg') !important;
     background-size: cover !important
 }
 
@@ -301,7 +301,7 @@ body {
 }
 
 .button-63:not([disabled]):hover {
-    background: linear-gradient(to bottom right, #00a5ea, #0076c8);
+    background: linear-gradient(to bottom right, #d7f3ff, #5ab7fa);
     color: gold;
     box-shadow: 0 0 .25rem #ffd70059, -.125rem -.125rem 1rem #00a5ea80, .125rem .125rem 1rem #ffd70059
 }
@@ -471,7 +471,8 @@ body {
 .box-certified {
     box-shadow: 0 0 10px #0000001a;
     padding: 5px;
-    margin-bottom: 7px
+    margin-bottom: 7px;
+    height: 25vh;
 }
 
 .area .title {
