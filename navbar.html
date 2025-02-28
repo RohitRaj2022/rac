@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #00a5ea;
+        }
+
+        /* Navbar Styles */
+        .navbar-container {
+            background-color: #00a5ea;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-logo {
+            float: left;
+            padding: 14px 20px;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-menu {
+            float: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-menu li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .nav-menu a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background-color: white;
+            color: #00a5ea;
+            border-radius: 4px;
+        }
+
+        /* Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: block;
+            position: absolute;
+            background-color: #00a5ea;
+            min-width: 160px;
+            z-index: 1;
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease, max-height 0.4s ease;
+        }
+
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            max-height: 500px; /* Adjust based on the number of items in the dropdown */
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: #00a5ea;
+        }
+
+        /* Hamburger Button */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 30px;
+            height: 25px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger div {
+            width: 30px;
+            height: 4px;
+            background-color: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.open div:nth-child(1) {
+            transform: rotate(45deg);
+            position: relative;
+            top: 8px;
+        }
+
+        .hamburger.open div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.open div:nth-child(3) {
+            transform: rotate(-45deg);
+            position: relative;
+            top: -8px;
+        }
+
+        /* Sticky Effect */
+        .navbar-container {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: #00a5ea;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-logo {
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-menu li {
+                display: block;
+                width: 100%;
+            }
+
+            .nav-menu a {
+                padding: 12px;
+            }
+
+            .dropdown-content {
+                position: static;
+                width: 100%;
+            }
+
+            .hamburger {
+                display: flex;
+                position: absolute;
+                right: 20px;
+                top: 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar-container">
+        <a href="#" class="nav-logo">AppliQ</a>
+        <button class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">AC Repair</a>
+                    <a href="#">Washing Machine Repair</a>
+                    <a href="#">Geyser Repair</a>
+                    <a href="#">RO Repair</a>
+                </div>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="#">Support</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        // Toggle the menu on hamburger button click
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>
