@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAC</title>
+    <link rel="preload" href="./RAC/build/assets/bootstrap-YHaYh3UX.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="preload" href="../build/assets/imp-N9Aeklld.css" />
+    <link rel="preload" href="../build/assets/sweetalert2-eP8wr-9K.css" />
+    <link rel="preload" href=".//build/assets/bootstrap-YHaYh3UX.css" />
+    <link rel="preload" href="../build/assets/font-awesome-2FyekaBJ.css" />
+    <link rel="preload" href="../build/assets/hover-DGOUWIaQ.css" />
+    <link rel="preload" href="../build/assets/owl-82NtGytu.css" />
+    <link rel="preload" href="../build/assets/owl.theme.default-SnCscLPJ.css" />
+    <link rel="preload" href="../build/assets/flaticon-9vn9FCTW.css" />
+    <link rel="preload" href="../build/assets/style-AUIvp7QP.css" />
+    <link rel="preload" href="../build/assets/style.css">
+    <link rel="preload" href="../build/assets/responsive-cabDHUJm.css" />
+
+    <link rel="stylesheet" href="../build/assets/imp-N9Aeklld.css" />
+    <link rel="stylesheet" href="../build/assets/sweetalert2-eP8wr-9K.css" />
+    <link rel="stylesheet" href="../build/assets/bootstrap-YHaYh3UX.css" />
+    <link rel="stylesheet" href="../build/assets/font-awesome-2FyekaBJ.css" />
+    <link rel="stylesheet" href="../build/assets/hover-DGOUWIaQ.css" />
+    <link rel="stylesheet" href="../build/assets/owl-82NtGytu.css" />
+    <link rel="stylesheet" href="../build/assets/owl.theme.default-SnCscLPJ.css" />
+    <link rel="stylesheet" href="../build/assets/flaticon-9vn9FCTW.css" />
+    <link rel="stylesheet" href="../build/assets/style-AUIvp7QP.css" />
+    <link rel="stylesheet" href="../build/assets/style.css">
+    <link rel="stylesheet" href="../build/assets/responsive-cabDHUJm.css" />
+    <link rel="stylesheet" href="../build/assets/Flaticon-a1yq_8fU.woff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../image/racLogo-plan.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../image/racLogo-plan.png" sizes="16x16">
+    <!-- ================================================================================================= -->
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jQuery (Required for Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- =========================================================================================================== -->
+    <style>
+    
+
+ 
+
+        .category-section {
+            margin-left: 10%;
+            margin-top: 5%;
+            width: 80%;
+            max-width: 1200px;
+            margin-bottom: 40px;
+        }
+
+        .category-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            position: relative;
+        }
+
+        .category-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #00a5ea;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .product-card p {
+            font-size: 1.2em;
+            color: #00a5ea;
+            font-weight: bold;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #00a5ea;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #82cff0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+    <!-- ---------------------------------------- -->
+    <section class="mainmenu-area ">
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="appoinment-button">
+                        <a href="../index.html">
+                            <img class="logo" src="../build/images/racLogo-planWH.png" style="width: 17vh;"
+                                alt="RAC Logo">
+                        </a>
+                    </div>
+                    <!--Start mainmenu-->
+                    <nav class="main-menu sticky">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+
+                                <li ><a href="../index.html">Home</a></li>
+                                </li>
+                                <li class="dropdown current"><a href="../services.html">Services</a>
+
+                                    <ul>
+                                        <li><a href="./acpage.html">AC Repair</a></li>
+                                        <li><a href="./ro.html">R.O. Repair</a></li>
+                                        <li><a href="./washingmachine.html">Washing Machine</a></li>
+                                        <li><a href="./geyser.html">Geyser Repair</a></li>
+                                        <li><a href="./microwave.html">Microwave Repair</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="../reviews.html">Reviews</a>
+                                <li><a href="../about.html">About Us</a>
+                                <li><a href="../carrier.html">Carrier</a></li>
+
+                                </li>
+                                <li><a href="../contact.html">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                    <!--End mainmenu-->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ---------------------------------service section start --------------------------  -->
+    <div class="category-section">
+        <h1 class="category-title">Air Cooler</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Laptop">
+                <h2>Fan Capacitor change</h2>
+                <p>$19.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Smartphone">
+                <h2>Motor Change</h2>
+                <p>$9.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Tablet">
+                <h2>Water Motor Change</h2>
+                <p>$39.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-section">
+        <h1 class="category-title">Celling Fan</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Washing Machine">
+                <h2>Un-Installation</h2>
+                <p>$499.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Refrigerator">
+                <h2>Installation</h2>
+                <p>$799.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Microwave">
+                <h2>Capacitor Change</h2>
+                <p>$199.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="category-section">
+        <h1 class="category-title">Other Services</h1>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="T-Shirt">
+                <h2>Wiring</h2>
+                <p>$29.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Jeans">
+                <h2>Led Bulb</h2>
+                <p>$49.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/250" alt="Sneakers">
+                <h2>Switches</h2>
+                <p>$79.99</p>
+                <a href="#" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------end service section ----------------------------  -->
+
+    <!--Start footer area-->
+    <footer class="footer-area" style="background-color: #f3f8fa;">
+        <div class="container">
+            <div class="row">
+                <!--Start single footer widget-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget mar-btm">
+                        <div class="footer-logo">
+                            <a href="https://www.roysairconditioner.com">
+                                <img src="./build/images/racLogo-plan.png" alt="rac Logo" width="165px">
+                            </a>
+                        </div>
+                        <div class="our-info">
+                            <p>Welcome to Roy's Air Conditioner, your trusted choice for AC, washing machine, geyser,
+                                and RO repairs.
+                                We deliver expert service with a focus on quality and customer satisfaction..</p>
+                            <div class="button">
+                                <a class="" href="https://www.roysairconditioner.com/about"><span
+                                        class="far fa-arrow-alt-circle-right"></span>Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget mar-btm">
+                        <div class="title">
+                            <h3>Usefull Links</h3>
+                        </div>
+                        <ul class="usefull-links left">
+
+                            <li><a href="./about.html"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Know about us</a>
+                            </li>
+
+                            <li><a href="./pages/privacy.html"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Privacy Policy</a></li>
+                            <li><a href="./pages/terms.html"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Terms of Use</a></li>
+                            <li><a href="./carrier.html"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Carrier</a></li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+                <!--Start single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget">
+                        <div class="title">
+                            <h3>Services Near Me</h3>
+                        </div>
+                        <ul class="usefull-links">
+                            <li><a href="/ac"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Air
+                                    Conditioner</a></li>
+                            <li><a href="/washing-machine"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Washing
+                                    Maching</a></li>
+                            <li><a href="/refrigerator"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Fridge</a></li>
+                            <li><a href="/geyser"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Geyser</a></li>
+                            <li><a href="/microwave"><span
+                                        class="fa fa-arrow-circle-o-right li-color-blue"></span>Microwave</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+                <!--Start single footer widget-->
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="single-footer-widget martop">
+                        <div class="title">
+                            <h3>Contact Details</h3>
+                        </div>
+                        <ul class="footer-contact-info">
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="fas fa-crosshairs"></span>
+                                </div>
+                                <div class="text-holder">
+                                    <h5><span>Address:</span>87b, Ramchander Enclave, Mohan Garden, Uttam Nagar, New
+                                        Delhi, Delhi, 110059
+                                    </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="fa fa-address-book-o"></span>
+                                </div>
+                                <div class="text-holder">
+                                    <h5><span>Phone:</span> +91 99588 89733</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="far fa-comment-dots"></span>
+                                </div>
+                                <div class="text-holder">
+                                    <h5><span>Email:</span> roysairconditioner@gmail.com</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-holder">
+                                    <span class="far fa-calendar-alt"></span>
+                                </div>
+                                <div class="text-holder">
+                                    <h5><span>Office Hrs:</span> All Days: 9 am to 7 pm</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+            </div>
+        </div>
+    </footer>
+    <!--Start footer bottom area-->
+    <section class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom">
+                        <div class="copyright-text pull-left">
+                            <p>Copyrights © 2025 All Rights Reserved by Roy's Air Conditioner</p>
+                        </div>
+                        <div class="footer-social-links pull-right">
+                            <ul>
+                                <li><a href="https://www.facebook.com/roys.airconditioner/" target="_blank"><i
+                                            class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.instagram.com/roys.airconditioner/" target="_blank"><i
+                                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/roy-s-air-conditioner-54ba43268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                        target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="https://www.youtube.com/@roysairconditioner" target="_blank"><i
+                                            class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End footer bottom area-->
+    <section class="bottom-supports footer-mobile">
+        <div class="supports">
+            <div class="call">
+                <div class="footer-mobile">
+                    <a href="tel:+9958889733"><i class="fa fa-phone" aria-hidden="true"></i> Call Now </a>
+                </div>
+            </div>
+            <div class="border"></div>
+            <div class=" whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+919958889733&text=Hello"><i class="fa fa-whatsapp"
+                        aria-hidden="true"></i>Whatsapp
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--End footer area-->
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+    <!-- <script src="/RAC/build/frontend-assets/js/jquery.js" defer></script> -->
+    <link rel="modulepreload" href="./build/assets/bootstrap.min-lz7vx7XX.js" />
+    <link rel="modulepreload" href="./build/assets/owl.carousel.min-0Kl7yIdt.js" />
+    <link rel="modulepreload" href="./build/assets/validation-kp7SKBCd.js" />
+    <script type="module" src="./build/assets/bootstrap.min-lz7vx7XX.js"></script>
+    <script type="module" src="./build/assets/owl.carousel.min-0Kl7yIdt.js"></script>
+    <script type="module" src="./build/assets/validation-kp7SKBCd.js"></script>
+
+    <!-- <script>
+    var reCAPTCHA_site_key = "6LelVYwpAAAAAA9jMMGzBHb-oFNsCYwsTHFv53Hg";
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LelVYwpAAAAAA9jMMGzBHb-oFNsCYwsTHFv53Hg" async></script> -->
+    <!-- thm custom script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./build/assets/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/080c86d33b.js" crossorigin="anonymous"></script>
+    <script src="./js/sweetalert.js" defer></script>
+    <link rel="modulepreload" href="./build/assets/custom-0xYnQhbu.js" />
+    <script type="module" src="./build/assets/custom-0xYnQhbu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            converflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slidesShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+
+            },
+
+        });
+
+
+        // Disable developer tools
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) { // F12 key
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl + Shift + I
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl + Shift + C
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl + Shift + J
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl + U
+                return false;
+            }
+        };
+    </script>
+
+</body>
+
+</html>
