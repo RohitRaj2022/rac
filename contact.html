@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAC</title>
+  <link rel="preload" href="./RAC/build/assets/bootstrap-YHaYh3UX.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preload" href="./build/assets/imp-N9Aeklld.css" />
+  <link rel="preload" href="./build/assets/sweetalert2-eP8wr-9K.css" />
+  <link rel="preload" href="./build/assets/bootstrap-YHaYh3UX.css" />
+  <link rel="preload" href="./build/assets/font-awesome-2FyekaBJ.css" />
+  <link rel="preload" href="./build/assets/hover-DGOUWIaQ.css" />
+  <link rel="preload" href="./build/assets/owl-82NtGytu.css" />
+  <link rel="preload" href="./build/assets/owl.theme.default-SnCscLPJ.css" />
+  <link rel="preload" href="./build/assets/flaticon-9vn9FCTW.css" />
+  <link rel="preload" href="./build/assets/style-AUIvp7QP.css" />
+  <link rel="preload" href="./build/assets/style.css">
+  <link rel="preload" href="./build/assets/responsive-cabDHUJm.css" />
+
+  <link rel="stylesheet" href="./build/assets/imp-N9Aeklld.css" />
+  <link rel="stylesheet" href="./build/assets/sweetalert2-eP8wr-9K.css" />
+  <link rel="stylesheet" href="./build/assets/bootstrap-YHaYh3UX.css" />
+  <link rel="stylesheet" href="./build/assets/font-awesome-2FyekaBJ.css" />
+  <link rel="stylesheet" href="./build/assets/hover-DGOUWIaQ.css" />
+  <link rel="stylesheet" href="./build/assets/owl-82NtGytu.css" />
+  <link rel="stylesheet" href="./build/assets/owl.theme.default-SnCscLPJ.css" />
+  <link rel="stylesheet" href="./build/assets/flaticon-9vn9FCTW.css" />
+  <link rel="stylesheet" href="./build/assets/style-AUIvp7QP.css" />
+  <link rel="stylesheet" href="./build/assets/style.css">
+  <link rel="stylesheet" href="./build/assets/responsive-cabDHUJm.css" />
+  <link rel="stylesheet" href="./build/assets/Flaticon-a1yq_8fU.woff">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+
+ <!-- ================================================================================================= -->
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <!-- jQuery (Required for Owl Carousel) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- =========================================================================================================== -->
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./image/racLogo-plan.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./image/racLogo-plan.png" sizes="16x16">
+  <style>
+
+
+/* navbar sticky  */
+/* .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays above other content 
+} */
+
+
+
+/* heading get in touch  */
+/* Styling for Contact Section */
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Get In Touch Heading */
+/* Styling for Breadcrumbs */
+/* Styling for Breadcrumbs */
+/* Styling for Breadcrumbs */
+.breadcrumb {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.breadcrumb-item a {
+  color: #030303;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 5px 0;
+  position: relative;
+}
+
+.breadcrumb-item a:hover {
+  color: #00a5ea;
+  text-decoration: none;
+}
+
+.breadcrumb-item a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #00a5ea;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.breadcrumb-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.breadcrumb-item.active {
+  color: #00a5ea;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-section {
+  background: linear-gradient(135deg, #e2e2e0 0%, #ffffff 100%);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  transition: background 0.5s ease;
+}
+
+.contact-section:hover::before {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Get In Touch Heading */
+.contact-heading {
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Paragraph under the heading */
+.contact-paragraph {
+  font-size: 1.2rem;
+  color: #0a0a0a;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+  padding: 0 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Animation for Heading */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for Paragraph */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .contact-paragraph {
+    font-size: 1rem;
+  }
+
+  .breadcrumb {
+    font-size: 1rem;
+  }
+}
+
+
+
+ /* ---------------------------------------------heading get in touch  end--------------------------  */
+
+
+
+
+    .contact-container {
+      display: flex;
+      justify-content: center;
+      /* Center the form horizontally */
+      /* align-items: center;     Center the form vertically */
+      width: 100%;
+      height: 100vh;
+      /* Ensure it takes the full viewport height */
+      max-width: 1200px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 0 auto;
+      /* Centers the contact container horizontally */
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .form-section h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .form-section input,
+    .form-section select,
+    .form-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .form-section input:focus,
+    .form-section select:focus,
+    .form-section textarea:focus {
+      border-color: #6e8efb;
+      box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+    }
+
+    .form-section button {
+      width: 100%;
+      padding: 10px;
+      background: #6e8efb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .form-section button:hover {
+      background: #4a6efb;
+      transform: scale(1.05);
+    }
+
+    .map-section {
+      flex: 1;
+      min-height: 400px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        width: 90%;
+        display: block;
+      }
+
+      .map-section {
+        min-height: 300px;
+        /* margin-top: 10px; */
+      }
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+<!-- ----------------Header Start------------------------ -->
+<header class="header-12345">
+  <ul class="contact-67890">
+      <li><i class="fa-solid fa-phone"></i> <a href="tel:919958889733">+91 99588 89733</a></li>
+      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:roysairconditioner@gmail.com">roysairconditioner@gmail.com</a></li>
+      <li><i class="fa-solid fa-location-dot"></i> <span>Uttam Nagar, New Delhi</span></li>
+  </ul>
+  <ul class="social-54321">
+      <li><a href="https://www.facebook.com/roys.airconditioner/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li><a href="https://www.instagram.com/roys.airconditioner/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a
+        href="https://www.linkedin.com/in/roy-s-air-conditioner-54ba43268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+      <li><a href="https://www.youtube.com/@roysairconditioner" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+  </ul>
+</header>
+
+
+  <!-- ---------------------------------------- -->
+  <section class="mainmenu-area ">
+
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="appoinment-button">
+            <a href="#">
+              <img class="logo" src="./build/images/racLogo-planWH.png" style="width: 17vh;" alt="RAC Logo">
+            </a>
+          </div>
+          <!--Start mainmenu-->
+          <nav class="main-menu sticky-top">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse clearfix">
+              <ul class="navigation clearfix">
+
+                <li ><a href="index.html">Home</a></li>
+                </li>
+                <li class="dropdown"><a href="services.html">Services</a>
+
+                  <ul>
+                    <li><a href="../pages/ac-repair-&-service.html">AC Repair</a></li>
+                    <li><a href="../pages/ro.html">R.O. Repair</a></li>
+                    <li><a href="../pages/washingmachine.html">Washing Machine</a></li>
+                    <li><a href="../pages/geyser.html">Geyser Repair</a></li>
+                    <li><a href="../pages/microwave.html">Microwave Repair</a></li>
+                    <li><a href="../pages/fridge.html">Refrigerator Repair</a></li>
+                    <li><a href="../pages/ledtv.html">Led Tv Repair</a></li>
+                  </ul>
+                </li>
+                <li><a href="./reviews.html">Reviews</a>
+                <li><a href="./about.html">About Us</a>
+                <li><a href="./carrier.html">Carrier</a></li>
+
+                </li>
+                <li class="current"><a href="./contact.html">Contact Us</a></li>
+
+              </ul>
+            </div>
+          </nav>
+          <!--End mainmenu-->
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ---------------------------------about section start --------------------------  -->
+
+
+
+
+  <main>
+    <!--Start breadcrumb area-->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Breadcrumbs -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Get In Touch</li>
+              </ol>
+            </nav>
+    
+            <!-- Get In Touch Heading -->
+            <h2 class="contact-heading">Get In Touch</h2>
+            <p class="contact-paragraph">
+              Feel free to reach out to us with any questions or concerns. Our team is here to assist you and provide the best solutions. We look forward to hearing from you!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <div class="contact-container">
+      <div class="form-section">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone" placeholder="Phone" required>
+          <select name="service" required>
+            <option value="">Select Service</option>
+            <option value="acrepair">AC Repair</option>
+            <option value="washing">Washing Machine</option>
+            <option value="ro">R.O Repair</option>
+            <option value="geyser">Geyser Repair</option>
+            <option value="refrigerator">Refrigerator</option>
+            <option value="gasfilling">Gas Filling</option>
+            <option value="microwave">Microwave Repair</option>
+            <option value="ledtv">LED TV Repair</option>
+          </select>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="map-section">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9730192130246!2d77.04727435200567!3d28.63057072774553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05fe251deb61%3A0x8548afd0f9b4d18a!2sRoy&#39;s%20Air%20conditioner%20%2FAC%20Repair%20service%20installation%20Dwarka!5e0!3m2!1sen!2sin!4v1739550382987!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <!-- <iframe webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen="true" scrolling="no"
+        src="https://forms.visme.co/formsPlayer/_embed/dm4m9kd7-untitled-project?embedIframeId=1"
+        title="B2B Newsletter Subscription" loading="lazy" class="vismeForms"
+        style="border: none; max-width: 100%; min-height: 516.846px; width: 100%; height: 100%;"></iframe>
+   -->
+
+
+
+
+
+
+
+
+    <!--Start footer area-->
+  <footer class="footer-area">
+    <div class="container">
+      <div class="row">
+        <!--Start single footer widget-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="single-footer-widget mar-btm">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img src="./build/images/racLogo-plan.png" alt="rac Logo" width="165px">
+              </a>
+            </div>
+            <div class="our-info">
+              <p>Welcome to Roy's Air Conditioner, your trusted choice for AC, washing machine, geyser, and RO repairs.
+                We deliver expert service with a focus on quality and customer satisfaction..</p>
+              <div class="button">
+                <a class="" href="./about.html"><span
+                    class="far fa-arrow-alt-circle-right"></span>Read
+                  More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End single footer widget-->
+        <!--Start single footer widget-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="single-footer-widget mar-btm">
+            <div class="title">
+              <h3>Usefull Links</h3>
+            </div>
+            <ul class="usefull-links left">
+
+              <li><a href="./about.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Know about us</a>
+              </li>
+
+              <li><a href="./pages/privacy.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Privacy Policy</a></li>
+              <li><a href="./pages/terms.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Terms of Use</a></li>
+              <li><a href="./carrier.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Carrier</a></li>
+
+            </ul>
+
+
+          </div>
+        </div>
+        <!--Start single footer widget-->
+        <!--Start single footer widget-->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+          <div class="single-footer-widget">
+            <div class="title">
+              <h3>Services Near Me</h3>
+            </div>
+            <ul class="usefull-links">
+              <li><a href="./pages/ac-repair-&-service.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Air Conditioner</a></li>
+              <li><a href="./pages/washingmachine.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Washing
+                  Maching</a></li>
+              <li><a href="./pages/fridge.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Fridge</a></li>
+              <li><a href="./pages/geyser.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Geyser</a></li>
+              <li><a href="./pages/microwave.html"><span class="fa fa-arrow-circle-o-right li-color-blue"></span>Microwave</a></li>
+
+            </ul>
+          </div>
+        </div>
+          <!--End single footer widget-->
+          <!--Start single footer widget-->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="single-footer-widget martop">
+              <div class="title">
+                <h3>Contact Details</h3>
+              </div>
+              <ul class="footer-contact-info">
+                <li>
+                  <div class="icon-holder">
+                    <span class="fas fa-crosshairs"></span>
+                  </div>
+                  <div class="text-holder">
+                    <h5><span>Address:</span>87b, Ramchander Enclave, Mohan Garden, Uttam Nagar, New Delhi, Delhi,
+                      110059
+                    </h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-holder">
+                    <span class="fa fa-address-book-o"></span>
+                  </div>
+                  <div class="text-holder">
+                    <h5><span>Phone:</span> +91 99588 89733</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-holder">
+                    <span class="far fa-comment-dots"></span>
+                  </div>
+                  <div class="text-holder">
+                    <h5><span>Email:</span> roysairconditioner@gmail.com</h5>
+                  </div>
+                </li>
+                <li>
+                  <div class="icon-holder">
+                    <span class="far fa-calendar-alt"></span>
+                  </div>
+                  <div class="text-holder">
+                    <h5><span>Office Hrs:</span> All Days: 9 am to 7 pm</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--End single footer widget-->
+        </div>
+      </div>
+    </footer>
+    <!--Start footer bottom area-->
+    <section class="footer-bottom-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-bottom">
+              <div class="copyright-text pull-left">
+                <p>Copyrights © 2025 All Rights Reserved by Roy's Air Conditioner</p>
+              </div>
+              <div class="footer-social-links pull-right">
+                <ul>
+                  <li><a href="https://www.facebook.com/roys.airconditioner/" target="_blank"><i class="fa fa-facebook"
+                        aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.instagram.com/roys.airconditioner/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/roy-s-air-conditioner-54ba43268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.youtube.com/@roysairconditioner" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End footer bottom area-->
+    <section class="bottom-supports footer-mobile">
+      <div class="supports">
+        <div class="call">
+          <div class="footer-mobile">
+            <a href="tel:+9958889733"><i class="fa fa-phone" aria-hidden="true"></i> Call Now </a>
+          </div>
+        </div>
+        <div class="border"></div>
+        <div class=" whatsapp">
+          <a href="https://api.whatsapp.com/send?phone=+919958889733&text=Hello"><i class="fa fa-whatsapp"
+              aria-hidden="true"></i>Whatsapp
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--End footer area-->
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+    <!-- <script src="/RAC/build/frontend-assets/js/jquery.js" defer></script> -->
+    <link rel="modulepreload" href="./build/assets/bootstrap.min-lz7vx7XX.js" />
+    <link rel="modulepreload" href="./build/assets/owl.carousel.min-0Kl7yIdt.js" />
+    <link rel="modulepreload" href="./build/assets/validation-kp7SKBCd.js" />
+    <script type="module" src="./build/assets/bootstrap.min-lz7vx7XX.js"></script>
+    <script type="module" src="./build/assets/owl.carousel.min-0Kl7yIdt.js"></script>
+    <script type="module" src="./build/assets/validation-kp7SKBCd.js"></script>
+
+    <!-- <script>
+    var reCAPTCHA_site_key = "6LelVYwpAAAAAA9jMMGzBHb-oFNsCYwsTHFv53Hg";
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LelVYwpAAAAAA9jMMGzBHb-oFNsCYwsTHFv53Hg" async></script> -->
+    <!-- thm custom script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./build/assets/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/080c86d33b.js" crossorigin="anonymous"></script>
+    <script src="./js/sweetalert.js" defer></script>
+    <link rel="modulepreload" href="./build/assets/custom-0xYnQhbu.js" />
+    <script type="module" src="./build/assets/custom-0xYnQhbu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        converflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slidesShadows: true,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+
+        },
+
+      });
+
+
+      // Disable developer tools
+      document.onkeydown = function (e) {
+        if (event.keyCode == 123) { // F12 key
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl + Shift + I
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl + Shift + C
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl + Shift + J
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl + U
+          return false;
+        }
+      };
+    </script>
+<script>
+  // header hidden in desktop
+   document.addEventListener("DOMContentLoaded", function() {
+  function toggleHeader() {
+      var header = document.querySelector(".header-12345");
+      if (window.innerWidth >= 769) {
+          header.style.display = "none";
+      } else {
+          header.style.display = "flex";
+      }
+  }
+  toggleHeader();
+  window.addEventListener("resize", toggleHeader);
+});
+</script>
+</body>
+
+</html>
